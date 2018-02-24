@@ -31,6 +31,18 @@ html {
   box-sizing: inherit;
 }
 
+.nav li{
+  display: inline-block;
+}
+
+.selected {
+  color: grey;
+}
+
+.unselected {
+  color: silver;
+}
+
 .filterbox {
   background-color: #EFEFEF;
   padding: 1em 0 0 1em;
@@ -62,3 +74,4 @@ html {
 .photo {
   width: 100%;
 }
+
