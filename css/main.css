@@ -75,3 +75,10 @@ html {
   width: 100%;
 }
 
+.filter {
+  color: grey;
+}
+
+.filter li {
+  width: 20%;
+}
