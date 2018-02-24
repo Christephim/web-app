@@ -82,3 +82,8 @@ html {
 .filter li {
   width: 20%;
 }
+
+i {
+  color: grey;
+  width: 1em;
+}
