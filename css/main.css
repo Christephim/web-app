@@ -1,0 +1,89 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Roboto', sans-serif;
+  arial, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.selected {
+  color: grey;
+}
+
+.unselected {
+  color: silver;
+}
+
+.filterbox {
+  background-color: #EFEFEF;
+  padding: 1em 0 0 1em;
+}
+
+.cardholder {
+  padding: 0 1em 1em 0;
+}
+
+.filtercard {
+  border: 1px silver solid;
+  background-color: #fff;
+  color: gray;
+}
+
+.date {
+  line-height: 1em;
+  font-size: 2em;
+}
+
+.title, .month {
+  line-height: 1em;
+}
+
+.location {
+  font-size: 12px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.filter {
+  color: grey;
+}
+
+.filter li {
+  width: 20%;
+}
+
+i {
+  color: grey;
+  width: 1em;
+}
