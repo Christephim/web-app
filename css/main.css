@@ -152,7 +152,7 @@ h1, h3{
     display: block;
 }
 
-.tabs .tab>input[type="radio"] {
+.filter-radio {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -186,15 +186,23 @@ h1, h3{
     transition: opacity 400ms ease-out;
 }
 
-.tabs>.tab>[id^="tab"]:checked + label {
+#tab-art:checked ~ .nav [for="tab-art"], #tab-social:checked ~ .nav [for="tab-social"] {
     top: 0;
-    background: #303030;
-    color: #F5F5F5;
+    background-color: transparent;
+    color: #000;
+    border-bottom: 2px solid #000;
 }
 
-.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
-    z-index: 1;/* or display: block; */
 
-    opacity: 1;
-    transition: opacity 400ms ease-out;
+.filterbox-social,
+.filterbox-art {
+  display: none;
+}
+
+#tab-art:checked ~ .filterbox-art {
+  display: block;
+}
+
+#tab-social:checked ~ .filterbox-social {
+  display: block;
 }

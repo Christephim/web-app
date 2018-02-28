@@ -2,20 +2,7 @@
 layout: default
 ---
 
-
-<div class="grid white island">
-  <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
-    <nav id="nav" role="navigation">
-      <div class="nav">
-        <ol class="yotta list-group push-0">
-          <li class="selected push-r-1-2">Art</li>
-          <li class="unselected push-r-1-2">Social</li>
-        </ol>
-      </div>
-    </nav>
-  </div>
-</div>
-
+{% include nav.html %}
 
 <div class="grid filterbox filterbox-art">
   {% for event in site.events %}
