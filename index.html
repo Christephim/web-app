@@ -5,69 +5,23 @@ layout: default
 {% include nav.html %}
 
 <div class="grid filterbox filterbox-art">
+  {% for event in site.events %}
+  {% if event.category contains "art" %}
   <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    <div class="filtercard">
-      <div class="embed embed-thumb">
-        <img class="embed-item" src="http://via.placeholder.com/400x158">
-      </div>
-      <div class="grid pad-t-1-2 pad-b-1-2">
-        <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-          <span class="text-center"><p class="month micro push-0">Feb</p><p class="date push-0">8</p></span>
-        </div>
-        <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
-          <p class="title micro push-0">Scattered Clouds//<br>WHOOP-Szo</p><p class="location push-0">Le Petit Chicago • 7PM</p>
-        </div>
-      </div>
-    </div>
+    {% include event-card.html data=event %}
   </div>
+  {% endif %}
+  {% endfor %}
+</div>
 
+<div class="grid filterbox filterbox-social">
+  {% for event in site.events %}
+  {% if event.category contains "social" %}
   <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    <div class="filtercard">
-      <div class="embed embed-thumb">
-        <img class="embed-item" src="http://via.placeholder.com/400x158">
-      </div>
-      <div class="grid pad-t-1-2 pad-b-1-2">
-        <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-          <span class="text-center"><p class="month micro push-0">Feb</p><p class="date push-0">9</p></span>
-        </div>
-        <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
-          <p class="title micro push-0">Claude Munson, Okies,<br>Sparklesaurus, Marie-Clo</p><p class="location push-0">Le Petit Chicago • 7PM</p>
-        </div>
-      </div>
-    </div>
+    {% include event-card.html data=event %}
   </div>
-
-  <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    <div class="filtercard">
-      <div class="embed embed-thumb">
-        <img class="embed-item" src="http://via.placeholder.com/400x158">
-      </div>
-      <div class="grid pad-t-1-2 pad-b-1-2">
-        <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-          <span class="text-center"><p class="month micro push-0">Feb</p><p class="date push-0">10</p></span>
-        </div>
-        <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
-          <p class="title micro push-0">Mushy Gushy/Area Resident/Little You Little Me</p><p class="location push-0">The Record Centre • 1PM</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    <div class="filtercard">
-      <div class="embed embed-thumb">
-        <img class="embed-item" src="http://via.placeholder.com/400x158">
-      </div>
-      <div class="grid pad-t-1-2 pad-b-1-2">
-        <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-          <span class="text-center"><p class="month micro push-0">Feb</p><p class="date push-0">10</p></span>
-        </div>
-        <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
-          <p class="title micro push-0">Sonicity Showcase</p><p class="location push-0">National Arts Centre • 6PM</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% endif %}
+  {% endfor %}
 </div>
 
 <nav id="nav" role="navigation">
