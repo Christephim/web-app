@@ -1,6 +1,6 @@
-<section class="recommended filterbox filterbox-art">
-  {% for event in site.art %}
-  {% if event.recommend == true %}
+<section class="recommended filterbox filterbox-social">
+  {% for event in site.social %}
+  {% if event.recommend contains true %}
     <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
       {% include event-card.html data=event %}
     </div>
