@@ -15,14 +15,6 @@ html {
   display: inline-block;
 }
 
-.selected {
-  color: grey;
-}
-
-.unselected {
-  color: silver;
-}
-
 .cardholder {
   padding: 0 1em 1em 0;
 }
