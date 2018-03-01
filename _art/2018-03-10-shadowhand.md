@@ -1,5 +1,4 @@
 ---
-recommend: true
 title: "Shadowhand / Merganzer"
 img: ""
 location: "St. Alban's"
