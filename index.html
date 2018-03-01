@@ -17,22 +17,4 @@ layout: default
   </div>
 </nav>
 
-<section class="events-list filterbox filterbox-art">
-  <div class="grid">
-    {% for event in site.art %}
-    <div class="unit xs-1 s-1-2 m-1-2 l-1-3 cardholder">
-      {% include event-card.html data=event %}
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="events-list filterbox filterbox-social">
-  <div class="grid">
-    {% for event in site.social %}
-    <div class="unit xs-1 s-1-2 m-1-2 l-1-3 cardholder">
-      {% include event-card.html data=event %}
-    </div>
-    {% endfor %}
-  </div>
-</section>
+{% include events-list.html %}
