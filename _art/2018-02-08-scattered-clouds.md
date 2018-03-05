@@ -1,5 +1,6 @@
 ---
-title: "Scattered Clouds"
+recommend: true
+title: "Scattered Clouds // Whoop-Szo"
 img: ""
 location: "Le Petit Chicago"
 time: "7pm"

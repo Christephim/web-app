@@ -3,26 +3,8 @@ layout: default
 ---
 
 {% include nav.html %}
-
-<div class="grid filterbox filterbox-art">
-  {% for event in site.events %}
-  {% if event.category contains "art" %}
-  <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    {% include event-card.html data=event %}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-
-<div class="grid filterbox filterbox-social">
-  {% for event in site.events %}
-  {% if event.category contains "social" %}
-  <div class="unit xs-1 s-1-2 m-1-4 l-1-4 cardholder">
-    {% include event-card.html data=event %}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
+{% include recommend-art.html %}
+{% include recommend-social.html %}
 
 <nav id="nav" role="navigation">
   <div class="nav white island filter">
@@ -34,3 +16,5 @@ layout: default
     </ol>
   </div>
 </nav>
+
+{% include events-list.html %}

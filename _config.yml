@@ -1,4 +1,5 @@
 permalink: pretty
 baseurl: "/web-app"
 collections:
-  - events
+  - art
+  - social
