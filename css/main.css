@@ -11,6 +11,10 @@ html {
   padding: 1em;
 }
 
+.nav {
+  border-bottom: solid 1px #000;
+}
+
 .nav li {
   display: inline-block;
 }
@@ -132,5 +136,19 @@ h1, h3{
 }
 
 #tab-social:checked ~ .filterbox-social {
+  display: block;
+}
+
+.event-main-info {
+  background-color: grey;
+}
+
+.bookmark {
+  width: 100%;
+  color: #grey;
+  background-color: #e4e4e4;
+  border: solid 1px black;
+  padding: 1.5em;
+  text-align: center;
   display: block;
 }
