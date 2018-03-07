@@ -1,5 +1,9 @@
 permalink: pretty
 baseurl: "/web-app"
 collections:
-  - art
-  - social
+  art:
+    output: true
+    permalink: /:collection/:title
+  social:
+    output: true
+    permalink: /:collection/:title

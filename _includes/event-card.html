@@ -1,13 +1,15 @@
 <div class="filtercard">
-  <div class="embed embed-thumb">
-    <img class="embed-item" src="{{site.basurl}}/images/{{ include.data.img }}">
-  </div>
-  <div class="grid pad-t-1-2 pad-b-1-2">
-    <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-      <span class="text-center"><p class="month micro push-0">{{ include.data.month }}</p><p class="date push-0">{{ include.data.day }}</p></span>
+  <a class="card-link" href={{include.data.url}}>
+    <div class="embed embed-thumb">
+      <img class="embed-item" src="{{site.baseurl}}/images/{{ include.data.img }}">
     </div>
-    <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
-      <p class="title micro push-0">{{ include.data.title }}</p><p class="location push-0">{{ include.data.location }} • {{ include.data.time }}</p>
+    <div class="grid pad-t-1-2 pad-b-1-2">
+      <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
+        <span class="text-center"><p class="month micro push-0">{{ include.data.month }}</p><p class="date push-0">{{ include.data.day }}</p></span>
+      </div>
+      <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4">
+        <p class="title micro push-0">{{ include.data.title }}</p><p class="location push-0">{{ include.data.location }} • {{ include.data.time }}</p>
+      </div>
     </div>
-  </div>
+  </a>
 </div>

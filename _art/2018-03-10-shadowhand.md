@@ -1,4 +1,5 @@
 ---
+layout: event-page
 title: "Shadowhand / Merganzer"
 img: ""
 location: "St. Alban's"
@@ -7,4 +8,5 @@ month: "MAR"
 day: "10"
 category: "art"
 sub-category: "live-music"
+bookmark: "Bookmark Event"
 ---
