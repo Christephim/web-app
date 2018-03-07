@@ -107,34 +107,6 @@ li a {
   width: 50%;
 }
 
-.select-form {
-  border-bottom: 2px solid var(--color-grey-light);
-  border-top: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
-.select-form-full {
-  border: 2px solid var(--color-grey-light);
-}
-
-.select-form-side {
-  border-bottom: 2px solid var(--color-grey-light);
-  border-top: 2px solid transparent;
-  border-right: 2px solid var(--color-grey-light);
-  border-left: 2px solid transparent;
-}
-
-.section-card {
-  border: 4px solid var(--color-grey-light);
-  background-color: var(--color-white);
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 h1, h3{
   text-transform: uppercase;
@@ -147,7 +119,7 @@ h1, h3{
     position: relative;
 }
 
-.tabs .tab{
+.tabs .tab {
     float: left;
     display: block;
 }
@@ -158,41 +130,30 @@ h1, h3{
     left: -9999px;
 }
 
-
-
 .tabs .tab>label {
     display: block;
-    padding: 6px 30px;
+    padding: 2px 30px;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
-    color: #52B252;
-    background: #EFEFEF;
+    color: #ccc;
+    background: transparent;
 }
 
-.tabs .content {
-    z-index: 0;/* or display: none; */
-    overflow: hidden;
-    width: 100%;
-    padding: 25px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background: #303030;
-    color: #DFDFDF;
-
-    opacity:0;
-    transition: opacity 400ms ease-out;
-}
-
-#tab-art:checked ~ .nav [for="tab-art"], #tab-social:checked ~ .nav [for="tab-social"] {
+#tab-art:checked ~ .nav [for="tab-art"] {
     top: 0;
     background-color: transparent;
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #46268E;
+    border-bottom: 2px solid #46268E;
 }
 
+#tab-social:checked ~ .nav [for="tab-social"] {
+    top: 0;
+    background-color: transparent;
+    color: #52B252;
+    border-bottom: 2px solid #52B252;
+}
 
 .filterbox-social,
 .filterbox-art {
