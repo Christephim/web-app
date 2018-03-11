@@ -1,9 +1,8 @@
 ---
 url: "{{site.baseurl}}/scattered/"
 layout: event-page
-recommend: true
-title: "Suuns au Minotaure"
-img: "art/minotaure-suuns.jpg"
+title: "Scattered Clouds//WHOOP-Szo"
+img: "art/scattered-clouds.jpg"
 location: "Minotaure"
 time: "8pm"
 month: "FEB"
