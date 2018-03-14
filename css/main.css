@@ -156,3 +156,7 @@ h1, h3{
 .card-link {
   text-decoration: none;
 }
+
+.my-events {
+  padding: 1em;
+}
