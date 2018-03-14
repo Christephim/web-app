@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="grid grid-middle nav">
+    <div class="gutter-1-2 unit xs-1 s-1-2 m-3-4 l-3-4">
+      <nav role="navigation" id="nav">
+        <h2 class="push-0 pad-t-1-2 pad-b-1-2">My Events</h2>
+      </nav>
+    </div>
+</div>
+
+<nav id="nav" role="navigation">
+  <div class="nav white island filter">
+    <ol class="wrapper mega list-group push-0 text-center">
+      <li class="micro">Today</li>
+      <li class="micro">This Week</li>
+      <li class="micro">This Month</li>
+      <li class="micro">This Year</li>
+    </ol>
+  </div>
+</nav>
+
+<section class="my-events">
+  <div class="grid">
+    {% for event in site.art %}
+    {% if event.bookmarked == true %}
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-3 cardholder">
+      {% include event-card.html data=event %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
