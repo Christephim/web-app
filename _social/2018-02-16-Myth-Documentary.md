@@ -1,13 +1,12 @@
 ---
 url: "{{site.baseurl}}/adventure-celtic-night/"
-recommend: true
 layout: event-page
-title: "Boston Pizza Re-Opening"
-img: "art/boston-pizza.jpg"
-location: "Boston Pizza"
+title: "Drinks and Dough"
+img: "art/Drinks-and-dough.jpg"
+location: "Drinks and Dough"
 time: "8pm"
 month: "FEB"
-day: "7"
+day: "10"
 category: "social"
 sub-category: "functions"
 bookmark: "Bookmark Event"

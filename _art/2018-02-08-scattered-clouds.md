@@ -1,7 +1,6 @@
 ---
 url: "{{site.baseurl}}/scattered-clouds/"
 layout: event-page
-recommend: true
 title: "Scattered Clouds // Whoop-Szo"
 img: "art/scattered-clouds.jpg"
 location: "Le Petit Chicago"
