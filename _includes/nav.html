@@ -2,28 +2,35 @@
 <input type="radio" name="tabs" class="filter-radio" id="tab-social" />
 
 <div class="pad-b-1-2 grid grid-middle nav">
-    <div class="gutter-1-2 unit xs-1 s-1-2 m-3-4 l-3-4">
-      <nav role="navigation" id="nav">
-        <ul class="tabs">
+  <div class="gutter-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
+    <nav role="navigation" id="nav">
+      <ul class="tabs">
 
-          <li class="tab">
-            <label for="tab-art">Art</label>
-          </li>
+        <li class="tab">
+          <label for="tab-art">Art</label>
+        </li>
 
-          <li class="tab">
-            <label for="tab-social">Social</label>
-          </li>
+        <li class="tab">
+          <label for="tab-social">Social</label>
+        </li>
 
-        </ul>
-      </nav>
-</div>
+      </ul>
+    </nav>
+  </div>
 
+  <div class="city-select pad-t-1-2 unit xs-1-4 s-1-4 m-1-4 l-1-4">
+    <select class="select-arrow" id="city">
+      <option>Ottawa, On</option>
+      <option>Toronto, On</option>
+      <option>Montreal, QC</option>
+    </select>
+  </div>
 
-<div class="pad-t-1-2 unit xs-1 s-1-2 m-1-4 l-1-4">
-  <select class="select-arrow" id="city">
-    <option>Ottawa, On</option>
-    <option>Toronto, On</option>
-    <option>Montreal, QC</option>
-  </select>
-</div>
+  <div class="profile-icon unit xs-1-4 s-1-4 m-1-4 l-1-4">
+    <a href="{{site.baseurl}}/profile/">
+      <i class="icon i-48">
+        <img src="{{site.baseurl}}/images/profile.svg" alt="">
+      </i>
+    </a>
+  </div>
 </div>
