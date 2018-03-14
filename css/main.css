@@ -152,3 +152,7 @@ h1, h3{
 .my-events {
   padding: 1em;
 }
+
+.embed-thumb, .embed--thumb {
+  padding-top: 39.5%;
+}
